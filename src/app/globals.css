@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-peter-black: #0A0A0A;
+    --color-peter-charcoal: #1A1A1A;
+    --color-peter-gold: #D4AF37;
+    --color-peter-brass: #B5A642;
+    --color-peter-offwhite: #F5F5DC;
+    --color-peter-crimson: #8B0000;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #0A0A0A;
+    color: #F5F5DC;
+  }
+
+  body {
+    background-color: #0A0A0A;
+    color: #F5F5DC;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #F9E79F 0%, #D4AF37 50%, #AA7C11 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-brass-gradient {
+    background: linear-gradient(135deg, #E6C280 0%, #B5A642 50%, #8C7B2B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .border-brass-subtle {
+    border-color: rgba(181, 166, 66, 0.25);
+  }
+
+  .border-gold-subtle {
+    border-color: rgba(212, 175, 55, 0.3);
+  }
+
+  .bg-radial-vignette {
+    background: radial-gradient(ellipse at center, rgba(181, 166, 66, 0.08) 0%, rgba(26, 26, 26, 0.7) 60%, rgba(10, 10, 10, 0.98) 100%);
+  }
+
+  .bg-gold-glow {
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+  }
+
+  .shimmer-skeleton {
+    background: linear-gradient(90deg, #1A1A1A 25%, #2A2A2A 50%, #1A1A1A 75%);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite ease-in-out;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,16 @@
+# Worker M3 Context
+- Scope: Milestone 3 - GSAP Scroll Transition & Editorial Luxury Sections.
+- Files Owned:
+  - `src/app/globals.css`
+  - `src/components/MuseumEntrance.tsx`
+  - `src/components/HeroSection.tsx`
+  - `src/components/SignatureExperience.tsx`
+  - `src/components/StoryTimeline.tsx`
+  - `src/components/AtmosphereSection.tsx`
+  - `src/components/MenuCatalogue.tsx`
+  - `src/components/VisitSection.tsx`
+  - `src/app/page.tsx`
+- Authoritative request: c:\Users\kings\Documents\antigravity\cool-archimedes\.agents\teamwork\ORIGINAL_REQUEST.md
+- Project spec: c:\Users\kings\Documents\antigravity\cool-archimedes\.agents\teamwork\orchestrator_1\PROJECT.md
+- Interaction spec: c:\Users\kings\Documents\antigravity\cool-archimedes\.agents\teamwork\explorer_survey_2\report.md
+- Menu service: c:\Users\kings\Documents\antigravity\cool-archimedes\src\lib\firebase\menuService.ts
